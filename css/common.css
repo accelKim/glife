@@ -245,6 +245,8 @@ h1 {
 }
 @media (max-width: 1300px) {
     .hd {
+      background-color: white;
+        position: fixed;
         display: block;
         z-index: 9999;
         width: 100%;
