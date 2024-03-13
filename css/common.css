@@ -214,10 +214,10 @@ h1 {
 .middleNav {
     left: 50%;
     transform: translateX(-50%);
-    bottom: 140px;
+    bottom: -30px;
     background-color: white;
     margin: 0;
-    position: absolute;
+    position: relative;
     width: 800px;
     height: 70px;
     z-index: 100;
@@ -258,7 +258,6 @@ h1 {
     min-width: 10%;
     transition: transform 0.5s ease-in-out;
 }
-
 
 @media (max-width: 1300px) {
     .hd {
@@ -302,7 +301,8 @@ h1 {
         display: none;
     }
     .middleNav {
-        bottom: 240px;
+        position: relative;
+        bottom: -30px;
     }
 }
 @media (max-width: 1000px) {
