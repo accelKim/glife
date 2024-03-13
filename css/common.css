@@ -17,7 +17,17 @@ body {
 }
 .mw {
     max-width: 1440px;
+    width: 100%;
     margin: auto;
+}
+.hd {
+    max-width: 1440px;
+    width: calc(100% - 20px);
+    position: relative;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
 }
 h1 img {
     width: 100%;
@@ -28,15 +38,6 @@ h1 {
     min-width: 100px;
     width: 100%;
     height: 100%;
-}
-.hd {
-    max-width: 1440px;
-    width: calc(100% - 20px);
-    position: relative;
-    height: 100px;
-    display: flex;
-    margin: auto;
-    justify-content: space-between;
 }
 .gnb {
     min-width: 850px;
@@ -213,12 +214,12 @@ h1 {
 .middleNav {
     left: 50%;
     transform: translateX(-50%);
-    bottom: 130px;
+    bottom: 140px;
     background-color: white;
     margin: 0;
     position: absolute;
     width: 800px;
-    height: 100px;
+    height: 70px;
     z-index: 100;
 }
 .middleNav ul {
@@ -245,7 +246,7 @@ h1 {
 }
 @media (max-width: 1300px) {
     .hd {
-      background-color: white;
+        background-color: white;
         position: fixed;
         display: block;
         z-index: 9999;
@@ -284,6 +285,9 @@ h1 {
     .slideShow-line {
         display: none;
     }
+    .middleNav {
+      bottom: 240px;
+    }
 }
 @media (max-width: 1000px) {
     .slideShow-text-sub {
@@ -292,8 +296,11 @@ h1 {
     .slideShow-text-main {
         display: none;
     }
-}
-
+    .middleNav {
+      position: relative;
+      bottom: -30px;
+    }
+  }
 /* 
 font-family: "Font Awesome 6 Free";
 font-weight: 900;
